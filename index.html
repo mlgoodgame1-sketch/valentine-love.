@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>For You ❤️</title>
+<style>
+body {
+  background: #ffe6ef;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding-top: 80px;
+}
+.card {
+  background: white;
+  width: 320px;
+  margin: auto;
+  padding: 30px;
+  border-radius: 25px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+h1 { color: #ff4d79; }
+p { font-size: 18px; }
+button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  background: #ff4d79;
+  color: white;
+  font-size: 16px;
+}
+</style>
+</head>
+
+<body>
+<div class="card">
+  <h1>Happy Valentine’s Day ❤️</h1>
+  <p id="text">I have something special for you...</p>
+  <button onclick="next()">Next 💕</button>
+</div>
+
+<script>
+let i = 0;
+let messages = [
+  "Thin Yu Zar cx Kaly Yay 💖",
+  "You are the reason I smile every day 😊",
+  "Having you in my life makes everything better ✨",
+  "I feel so lucky to love you 💕",
+  "I love you more than words can say ❤️"
+];
+
+function next() {
+  document.getElementById("text").innerText = messages[i];
+  if (i < messages.length - 1) i++;
+}
+</script>
+</body>
+</html>
